@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[suite execution started -adv report configuration]]>
+    </line>
+    <line>
+      <![CDATA[connected with database]]>
+    </line>
+    <line>
+      <![CDATA[configured the parallel exe]]>
+    </line>
+    <line>
+      <![CDATA[Launching browser]]>
+    </line>
+    <line>
+      <![CDATA[Logged into the application]]>
+    </line>
+    <line>
+      <![CDATA[Logged out of the application]]>
+    </line>
+    <line>
+      <![CDATA[Logged into the application]]>
+    </line>
+    <line>
+      <![CDATA[Logged out of the application]]>
+    </line>
+    <line>
+      <![CDATA[Logged into the application]]>
+    </line>
+    <line>
+      <![CDATA[Logged out of the application]]>
+    </line>
+    <line>
+      <![CDATA[quitting the browser]]>
+    </line>
+    <line>
+      <![CDATA[close config of parallel exe]]>
+    </line>
+    <line>
+      <![CDATA[Disconnected with database]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-05-11T15:45:48 IST" name="Default suite" finished-at="2026-05-11T15:46:33 IST" duration-ms="45171">
+    <groups>
+      <group name="regression">
+        <method signature="Createcontact_moduletest.CreateContact_WithSupportdates_test()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" name="CreateContact_WithSupportdates_test" class="Contact_module.Createcontact_moduletest"/>
+        <method signature="Createcontact_moduletest.CreateContact_With_orgnametest()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" name="CreateContact_With_orgnametest" class="Contact_module.Createcontact_moduletest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="Createcontact_moduletest.CreateContact_Withlastname_test()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" name="CreateContact_Withlastname_test" class="Contact_module.Createcontact_moduletest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-05-11T15:45:48 IST" name="Default test" finished-at="2026-05-11T15:46:33 IST" duration-ms="45171">
+      <class name="Contact_module.Createcontact_moduletest">
+        <test-method is-config="true" signature="connectwithdb()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" started-at="2026-05-11T15:45:47 IST" name="connectwithdb" finished-at="2026-05-11T15:45:48 IST" duration-ms="332" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[connected with database]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- connectwithdb -->
+        <test-method is-config="true" signature="configParallelExe()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" started-at="2026-05-11T15:45:48 IST" name="configParallelExe" finished-at="2026-05-11T15:45:48 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[configured the parallel exe]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configParallelExe -->
+        <test-method is-config="true" signature="launchthebrowser()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" started-at="2026-05-11T15:45:48 IST" name="launchthebrowser" finished-at="2026-05-11T15:45:49 IST" duration-ms="1266" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Launching browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchthebrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" started-at="2026-05-11T15:45:49 IST" name="login" finished-at="2026-05-11T15:45:50 IST" duration-ms="1139" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged into the application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="CreateContact_WithSupportdates_test()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" started-at="2026-05-11T15:45:50 IST" name="CreateContact_WithSupportdates_test" finished-at="2026-05-11T15:46:02 IST" duration-ms="12444" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Create Contact...']"}
+  (Session info: chrome=148.0.7778.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [226d290b9f323d44a80050923c6a3897, findElement {using=xpath, value=//img[@title='Create Contact...']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60354}, goog:processID: 44572, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60354/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 226d290b9f323d44a80050923c6a3897]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Create Contact...']"}
+  (Session info: chrome=148.0.7778.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [226d290b9f323d44a80050923c6a3897, findElement {using=xpath, value=//img[@title='Create Contact...']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60354}, goog:processID: 44572, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60354/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 226d290b9f323d44a80050923c6a3897
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+at pompages.contact_pom_page.getContact_plusicon(contact_pom_page.java:32)
+at Contact_module.Createcontact_moduletest.CreateContact_WithSupportdates_test(Createcontact_moduletest.java:667)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateContact_WithSupportdates_test -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" started-at="2026-05-11T15:46:03 IST" name="logout" finished-at="2026-05-11T15:46:04 IST" duration-ms="1430" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged out of the application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" started-at="2026-05-11T15:46:04 IST" name="login" finished-at="2026-05-11T15:46:05 IST" duration-ms="595" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged into the application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="CreateContact_With_orgnametest()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" started-at="2026-05-11T15:46:05 IST" name="CreateContact_With_orgnametest" finished-at="2026-05-11T15:46:17 IST" duration-ms="12203" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Create Organization...']"}
+  (Session info: chrome=148.0.7778.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [226d290b9f323d44a80050923c6a3897, findElement {using=xpath, value=//img[@title='Create Organization...']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60354}, goog:processID: 44572, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60354/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 226d290b9f323d44a80050923c6a3897]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Create Organization...']"}
+  (Session info: chrome=148.0.7778.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [226d290b9f323d44a80050923c6a3897, findElement {using=xpath, value=//img[@title='Create Organization...']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60354}, goog:processID: 44572, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60354/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 226d290b9f323d44a80050923c6a3897
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+at pompages.organization_pom_page.getPlusicon(organization_pom_page.java:34)
+at Contact_module.Createcontact_moduletest.CreateContact_With_orgnametest(Createcontact_moduletest.java:347)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateContact_With_orgnametest -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" started-at="2026-05-11T15:46:17 IST" name="logout" finished-at="2026-05-11T15:46:18 IST" duration-ms="1369" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged out of the application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="login()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" started-at="2026-05-11T15:46:18 IST" name="login" finished-at="2026-05-11T15:46:19 IST" duration-ms="495" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged into the application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="CreateContact_Withlastname_test()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" started-at="2026-05-11T15:46:19 IST" name="CreateContact_Withlastname_test" finished-at="2026-05-11T15:46:31 IST" duration-ms="12095" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Create Contact...']"}
+  (Session info: chrome=148.0.7778.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [226d290b9f323d44a80050923c6a3897, findElement {using=xpath, value=//img[@title='Create Contact...']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60354}, goog:processID: 44572, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60354/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 226d290b9f323d44a80050923c6a3897]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Create Contact...']"}
+  (Session info: chrome=148.0.7778.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.43.0', revision: 'dd0f534'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [226d290b9f323d44a80050923c6a3897, findElement {using=xpath, value=//img[@title='Create Contact...']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.97, chrome: {chromedriverVersion: 148.0.7778.97 (6b3fa66a923a..., userDataDir: C:\Users\DELL\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60354}, goog:processID: 44572, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60354/devtoo..., se:cdpVersion: 148.0.7778.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 226d290b9f323d44a80050923c6a3897
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+at pompages.contact_pom_page.getContact_plusicon(contact_pom_page.java:32)
+at Contact_module.Createcontact_moduletest.CreateContact_Withlastname_test(Createcontact_moduletest.java:134)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateContact_Withlastname_test -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" started-at="2026-05-11T15:46:31 IST" name="logout" finished-at="2026-05-11T15:46:32 IST" duration-ms="1512" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logged out of the application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="quitthebrowser()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" started-at="2026-05-11T15:46:32 IST" name="quitthebrowser" finished-at="2026-05-11T15:46:33 IST" duration-ms="212" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[quitting the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- quitthebrowser -->
+        <test-method is-config="true" signature="closeconfigpe()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" started-at="2026-05-11T15:46:33 IST" name="closeconfigpe" finished-at="2026-05-11T15:46:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[close config of parallel exe]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeconfigpe -->
+        <test-method is-config="true" signature="Disconnect_db()[pri:0, instance:Contact_module.Createcontact_moduletest@6a78afa0]" started-at="2026-05-11T15:46:33 IST" name="Disconnect_db" finished-at="2026-05-11T15:46:33 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Disconnected with database]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Disconnect_db -->
+      </class> <!-- Contact_module.Createcontact_moduletest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
