@@ -57,14 +57,14 @@ public class Createcontact_moduletest extends Baseclass {
 		
 		
 		//listners.Listners.test.log(Status.INFO, "fetching Random Intege");
-		UtilityObjectclass.getTest().log(Status.INFO, "fetching random integer");
+		UtilityObjectclass.getTest().log(Status.INFO, "fetching the  random integer");
 		
 		javautility jutil=new javautility();
 		int randam = jutil.fetchRandom();
 		
 		// Get The Test Data From Excel File Using ExcelFileUtility
 		
-		UtilityObjectclass.getTest().log(Status.INFO, "fetching data from excel");
+		UtilityObjectclass.getTest().log(Status.INFO, "fetching the  data from excel");
 
 		
 		ExcelFileUtility exc = new ExcelFileUtility();

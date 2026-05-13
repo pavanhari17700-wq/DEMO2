@@ -62,7 +62,7 @@ public class Createorganization_moduletest extends Baseclass {
 
 			//listners.Listners.test.log(Status.INFO, "fetching Random Intege");
 
-			UtilityObjectclass.getTest().log(Status.INFO, "fetching Random Integer");
+			UtilityObjectclass.getTest().log(Status.INFO, "fetching the Random Integer");
 
 			
 			javautility jutil=new javautility();
@@ -70,7 +70,7 @@ public class Createorganization_moduletest extends Baseclass {
 			
 			// Get The Test Data From Excel File Using ExcelFileUtility
 			
-			UtilityObjectclass.getTest().log(Status.INFO, "fetching data from excel file");
+			UtilityObjectclass.getTest().log(Status.INFO, "fetching the  data from excel file");
 
 			
 			ExcelFileUtility exc = new ExcelFileUtility();
@@ -208,7 +208,7 @@ public class Createorganization_moduletest extends Baseclass {
 //			}
 			
 			
-			UtilityObjectclass.getTest().log(Status.INFO, "handling type dropdown");
+			UtilityObjectclass.getTest().log(Status.INFO, "handling type  of dropdown");
 
 			wutil.SelectDDbyVisibletext(Typedrop, Analyst);
 
